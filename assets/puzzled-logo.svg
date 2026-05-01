@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">puzzled logo</title>
+  <desc id="desc">A lowercase puzzled wordmark with a four-piece puzzle icon.</desc>
+  <defs>
+    <linearGradient id="puzzle-fill" x1="4" y1="4" x2="78" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4b840"/>
+      <stop offset="0.48" stop-color="#e75236"/>
+      <stop offset="1" stop-color="#2f8d87"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(4 8)">
+      <path fill="url(#puzzle-fill)" d="M8 12c0-4.42 3.58-8 8-8h18v10.6c0 2.7 2.9 4.4 5.25 3.05a7.7 7.7 0 0 1 3.83-1.02c4.36 0 7.9 3.54 7.9 7.9s-3.54 7.9-7.9 7.9a7.7 7.7 0 0 1-3.83-1.02C36.9 30.06 34 31.76 34 34.46V44H16c-4.42 0-8-3.58-8-8V12Zm34 32h10.55c2.7 0 4.4 2.9 3.05 5.25a7.7 7.7 0 0 0-1.02 3.83c0 4.36 3.54 7.9 7.9 7.9s7.9-3.54 7.9-7.9a7.7 7.7 0 0 0-1.02-3.83C68.01 46.9 69.71 44 72.41 44H82v18c0 4.42-3.58 8-8 8H50c-4.42 0-8-3.58-8-8V44Z"/>
+      <path fill="#fff" fill-opacity=".28" d="M18 14h13v8H18zM50 52h20v8H50z"/>
+      <path stroke="#211b16" stroke-opacity=".18" stroke-width="3" d="M16 5.5h18.5v9.1c0 1.54 1.66 2.51 3 1.74a11.2 11.2 0 0 1 5.58-1.49c5.34 0 9.67 4.33 9.67 9.68s-4.33 9.68-9.67 9.68c-1.99 0-3.91-.52-5.58-1.49-1.34-.77-3 .2-3 1.74V45.5H16A9.5 9.5 0 0 1 6.5 36V15A9.5 9.5 0 0 1 16 5.5Zm24.5 37H53c1.54 0 2.51 1.66 1.74 3a11.2 11.2 0 0 0-1.49 5.58c0 5.34 4.33 9.67 9.68 9.67s9.68-4.33 9.68-9.67c0-1.99-.52-3.91-1.49-5.58-.77-1.34.2-3 1.74-3H83.5V62A9.5 9.5 0 0 1 74 71.5H50A9.5 9.5 0 0 1 40.5 62V42.5Z"/>
+    </g>
+    <text x="105" y="67" fill="#211b16" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="54" font-weight="900" letter-spacing="0">puzzled</text>
+  </g>
+</svg>

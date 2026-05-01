@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">puzzled mark</title>
+  <desc id="desc">A compact four-piece puzzle icon for puzzled.</desc>
+  <defs>
+    <linearGradient id="puzzle-fill" x1="8" y1="8" x2="88" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4b840"/>
+      <stop offset="0.48" stop-color="#e75236"/>
+      <stop offset="1" stop-color="#2f8d87"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#puzzle-fill)" d="M12 16c0-4.42 3.58-8 8-8h22v13.6c0 2.7 2.9 4.4 5.25 3.05a9.63 9.63 0 0 1 4.83-1.29 9.9 9.9 0 1 1 0 19.8 9.63 9.63 0 0 1-4.83-1.29C44.9 40.52 42 42.22 42 44.92V54H20c-4.42 0-8-3.58-8-8V16Zm38 38h13.6c2.7 0 4.4 2.9 3.05 5.25a9.63 9.63 0 0 0-1.29 4.83 9.9 9.9 0 1 0 19.8 0 9.63 9.63 0 0 0-1.29-4.83C82.52 56.9 84.22 54 86.92 54H88v22c0 4.42-3.58 8-8 8H58c-4.42 0-8-3.58-8-8V54Z"/>
+  <path fill="#fff" fill-opacity=".28" d="M23 20h15v9H23zM58 62h19v9H58z"/>
+  <path stroke="#211b16" stroke-opacity=".18" stroke-width="4" d="M20 10h24v11.6c0 1.16 1.24 1.88 2.24 1.3a11.59 11.59 0 0 1 5.84-1.55 11.9 11.9 0 0 1 0 23.8c-2.08 0-4.07-.53-5.84-1.55-1-.58-2.24.14-2.24 1.3V56H20c-5.52 0-10-4.48-10-10V20c0-5.52 4.48-10 10-10Zm28 42h15.6c1.16 0 1.88 1.24 1.3 2.24a11.59 11.59 0 0 0-1.55 5.84 11.9 11.9 0 1 0 23.8 0c0-2.08-.53-4.07-1.55-5.84-.58-1 .14-2.24 1.3-2.24H90v24c0 5.52-4.48 10-10 10H58c-5.52 0-10-4.48-10-10V52Z"/>
+</svg>

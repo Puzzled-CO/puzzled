@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Register solo or with a team for puzzled, a local bar speed puzzle game. Entry is $20 per person, with up to four team members.">
+    <title>puzzled | Bar Speed Puzzle Game</title>
+    <link rel="icon" href="assets/puzzled-mark.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/puzzle-night-hero.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="puzzled home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/puzzled-mark.svg" alt="">
+        </span>
+        <span class="brand-name">puzzled</span>
+      </a>
+      <nav class="nav-links" aria-label="Event navigation">
+        <a href="#details">Details</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#register">Register</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/puzzle-night-hero.png" alt="A bar table set up with a colorful jigsaw puzzle, timer, pencils, and drinks for puzzle night.">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="kicker">puzzled presents</p>
+          <h1 id="hero-title">Build fast. Finish first. Claim the table.</h1>
+          <p class="hero-copy">puzzled brings fast, friendly 500-piece puzzle sprints to your local bar every Sunday. Entry is $20 per person and includes one drink ticket.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#register">Sign up</a>
+            <a class="button secondary" href="#details">Event details</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="details" class="details-section" aria-labelledby="details-title">
+        <div class="section-inner details-grid">
+          <div>
+            <p class="eyebrow">The format</p>
+            <h2 id="details-title">A casual competition built for bar night energy.</h2>
+            <p>Bring your puzzle brain, sign up solo or with a team, and settle in for a table-vs-table challenge. Every team gets a different 500-piece puzzle at the same skill level. In regular play, each team's time is tracked cumulatively, and the first team to finish wins and keeps the puzzle.</p>
+          </div>
+          <div class="detail-list" aria-label="Event facts">
+            <div class="detail-item">
+              <span class="detail-icon" aria-hidden="true">T</span>
+              <div>
+                <strong>Cumulative clock</strong>
+                <span>Countdowns are saved for finals</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon" aria-hidden="true">$</span>
+              <div>
+                <strong>$20 entry</strong>
+                <span>Per person with one drink ticket</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon" aria-hidden="true">5</span>
+              <div>
+                <strong>Five-team events</strong>
+                <span>Every Sunday has limited seats</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon" aria-hidden="true">4</span>
+              <div>
+                <strong>Up to four players</strong>
+                <span>Individuals are welcome too</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon" aria-hidden="true">500</span>
+              <div>
+                <strong>500 pieces</strong>
+                <span>Different puzzles, same skill level</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="calendar" class="calendar-section" aria-labelledby="calendar-title">
+        <div class="section-inner calendar-layout">
+          <div>
+            <p class="eyebrow">Sunday calendar</p>
+            <h2 id="calendar-title">Pick your puzzle night.</h2>
+            <p>Each Sunday event has room for five teams. Choose a date below, then register solo or with your team.</p>
+          </div>
+          <div class="calendar-panel" aria-label="Upcoming Sunday events">
+            <div id="eventCalendar" class="event-calendar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="register" class="register-section" aria-labelledby="register-title">
+        <div class="section-inner register-layout">
+          <aside class="registration-summary" aria-label="Registration summary">
+            <img class="brand-lockup" src="assets/puzzled-logo.svg" alt="puzzled">
+            <p class="eyebrow">Reserve your table</p>
+            <h2 id="register-title">$20 per person</h2>
+            <p>Register as an individual or add up to four total players for the selected Sunday. Each paid entry includes one drink ticket.</p>
+            <dl class="price-box">
+              <div>
+                <dt>Selected event</dt>
+                <dd id="selectedEventLabel">Choose a Sunday</dd>
+              </div>
+              <div>
+                <dt>Event capacity</dt>
+                <dd id="selectedEventCapacity">5 teams</dd>
+              </div>
+              <div>
+                <dt>Entry</dt>
+                <dd>$20 per person</dd>
+              </div>
+              <div>
+                <dt>Included</dt>
+                <dd>1 drink ticket per person</dd>
+              </div>
+              <div>
+                <dt>Team limit</dt>
+                <dd>1-4 players</dd>
+              </div>
+            </dl>
+          </aside>
+
+          <form id="signupForm" class="signup-form" name="team-signup" method="post" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="team-signup">
+            <input id="eventDate" type="hidden" name="eventDate" required>
+            <p class="hidden-field">
+              <label>Do not fill this out: <input name="bot-field"></label>
+            </p>
+
+            <div class="form-row">
+              <label for="teamName">Team or individual name</label>
+              <input id="teamName" name="teamName" type="text" autocomplete="organization" placeholder="The Missing Pieces or Alex Taylor" required>
+            </div>
+
+            <div class="split-row">
+              <div class="form-row">
+                <label for="captainName">Captain name</label>
+                <input id="captainName" name="captainName" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-row">
+                <label for="captainEmail">Captain email</label>
+                <input id="captainEmail" name="captainEmail" type="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <fieldset class="member-fieldset">
+              <legend>Players <span id="memberCount">1 of 4</span></legend>
+              <div id="membersList" class="members-list">
+                <div class="member-row" data-member-row>
+                  <label for="member-1">Player 1</label>
+                  <input id="member-1" name="members[]" type="text" autocomplete="name" placeholder="Captain or teammate name" required>
+                </div>
+              </div>
+              <div class="member-actions">
+                <button class="icon-button" id="addMember" type="button" aria-label="Add team member" title="Add team member">
+                  <span aria-hidden="true">+</span>
+                </button>
+                <button class="icon-button" id="removeMember" type="button" aria-label="Remove last team member" title="Remove last team member" disabled>
+                  <span aria-hidden="true">-</span>
+                </button>
+              </div>
+            </fieldset>
+
+            <div class="form-row">
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Accessibility needs, late teammate names, or anything else"></textarea>
+            </div>
+
+            <div class="checkout-strip" aria-live="polite">
+              <span>Due now</span>
+              <strong id="checkoutTotal">$20.00</strong>
+            </div>
+
+            <button id="submitButton" class="button primary submit-button" type="submit">Register and pay $20</button>
+            <p id="formMessage" class="form-message" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>puzzled | Questions? Contact <a href="mailto:hello@example.com">hello@example.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
